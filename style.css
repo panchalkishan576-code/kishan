@@ -1,0 +1,358 @@
+/* ================================
+   Global Styles
+================================ */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Inter, Arial, sans-serif;
+    background: #f4f7fb;
+    color: #172033;
+}
+
+
+/* ================================
+   Header
+================================ */
+
+.top {
+    background: linear-gradient(135deg, #102a43, #1f4e79);
+    color: #fff;
+    padding: 25px 6%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.top p {
+    margin: 7px 0 0;
+    color: #d9e8f5;
+}
+
+.user {
+    background: #fff2;
+    border: 1px solid #fff4;
+    padding: 10px 16px;
+    border-radius: 30px;
+}
+
+
+/* ================================
+   Navigation Bar
+================================ */
+
+nav {
+    background: #0c2238;
+    padding: 13px 6%;
+
+    display: flex;
+    gap: 25px;
+
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+/* ================================
+   Hero Section
+================================ */
+
+.hero {
+    max-width: 1150px;
+    margin: 28px auto 20px;
+
+    background: #fff;
+    border-radius: 20px;
+    padding: 35px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0 8px 30px #17324d12;
+}
+
+.hero h2 {
+    font-size: 34px;
+    margin: 10px 0;
+}
+
+.hero p {
+    font-size: 17px;
+    color: #667085;
+    max-width: 650px;
+}
+
+.tag {
+    font-size: 12px;
+    font-weight: 800;
+    color: #2d6a9f;
+    letter-spacing: 2px;
+}
+
+.hero-icon {
+    font-size: 90px;
+}
+
+
+/* ================================
+   Dashboard Cards
+================================ */
+
+.cards {
+    max-width: 1150px;
+    margin: 20px auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 22px;
+
+    box-shadow: 0 5px 22px #17324d10;
+}
+
+.card span {
+    font-size: 27px;
+}
+
+.card b {
+    display: block;
+    font-size: 31px;
+    margin: 10px 0 3px;
+    color: #173b5c;
+}
+
+.card small {
+    color: #667085;
+}
+
+
+/* ================================
+   Panels
+================================ */
+
+.panel {
+    max-width: 1150px;
+    margin: 22px auto;
+
+    background: #fff;
+    padding: 27px;
+    border-radius: 16px;
+
+    box-shadow: 0 5px 22px #17324d10;
+}
+
+.panel h2 {
+    margin: 0 0 6px;
+    color: #173b5c;
+}
+
+.panel p {
+    color: #667085;
+    margin-top: 0;
+}
+
+
+/* ================================
+   Section Title
+================================ */
+
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+
+/* ================================
+   Search Box
+================================ */
+
+.search {
+    max-width: 280px;
+}
+
+
+/* ================================
+   Forms
+================================ */
+
+.form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+
+/* ================================
+   Input, Select and Button
+================================ */
+
+input,
+select,
+button {
+    padding: 12px 13px;
+    border-radius: 8px;
+    border: 1px solid #d0d5dd;
+    font-size: 14px;
+}
+
+input,
+select {
+    flex: 1;
+    min-width: 190px;
+}
+
+button {
+    background: #173b5c;
+    color: white;
+    border: 0;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+
+/* ================================
+   Danger Button
+================================ */
+
+.danger {
+    background: #b42318;
+}
+
+
+/* ================================
+   Tables
+================================ */
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 13px;
+    border-bottom: 1px solid #eaecf0;
+    text-align: left;
+}
+
+th {
+    background: #f8fafc;
+    color: #475467;
+}
+
+
+/* ================================
+   Reports
+================================ */
+
+.report-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.report-grid div {
+    padding: 18px;
+    border: 1px solid #eaecf0;
+    border-radius: 12px;
+}
+
+.report-grid b,
+.report-grid span {
+    display: block;
+}
+
+.report-grid span {
+    color: #667085;
+    margin-top: 7px;
+}
+
+
+/* ================================
+   Footer
+================================ */
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #667085;
+}
+
+
+/* ================================
+   Responsive Design
+================================ */
+
+@media (max-width: 750px) {
+
+    .top {
+        padding: 20px;
+    }
+
+    .top h1 {
+        font-size: 21px;
+    }
+
+    .hero,
+    .panel {
+        margin: 15px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr 1fr;
+        margin: 15px;
+    }
+
+    .hero-icon {
+        display: none;
+    }
+
+    .section-title {
+        display: block;
+    }
+
+    .report-grid {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        gap: 13px;
+        overflow: auto;
+        padding: 12px 15px;
+        white-space: nowrap;
+    }
+}
